@@ -1,12 +1,6 @@
 import pathlib
-import itertools
 lines = pathlib.Path(r'C:\Users\vasileia.kampouraki\Python code\Main\applications\cnn_lane_boundary_visualizer\advent22\day2\data.txt').read_text().rstrip().split('\n')
 # print(lines)
-
-# pairs = [line for line in lines]
-# print(pairs)
-# for opp, me in zip(pairs):
-#     print(opp,me)
 
 opponent = []
 me = []
@@ -23,39 +17,39 @@ for line in lines:
 # draw = 3
 # win = 6
 
-# sum_score = 0
+sum_score = 0
 
-# """Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock. If both players choose the same shape, the round instead ends in a draw."""
-# # A = rock
-# # B = paper
-# # C = scissors
-# my_score = 0
-# for opp, elf in zip(opponent,me):
-#     if opp == 'A' and elf == 'Z':
-#         my_score = (3 + 0)
-#     if opp == 'A' and elf == 'X':
-#         my_score = (1 + 3)
-#     if  opp == 'A' and elf == 'Y':
-#         my_score = (2 + 6)
+"""Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock. If both players choose the same shape, the round instead ends in a draw."""
+# A = rock
+# B = paper
+# C = scissors
+my_score = 0
+for opp, elf in zip(opponent,me):
+    if opp == 'A' and elf == 'Z':
+        my_score = (3 + 0)
+    if opp == 'A' and elf == 'X':
+        my_score = (1 + 3)
+    if  opp == 'A' and elf == 'Y':
+        my_score = (2 + 6)
 
-#     if opp == 'B' and elf == 'X':
-#         my_score = (1 + 0)
-#     if opp == 'B' and elf == 'Y':
-#         my_score = (2 + 3)
-#     if  opp == 'B' and elf == 'Z':
-#         my_score = (3 + 6)
+    if opp == 'B' and elf == 'X':
+        my_score = (1 + 0)
+    if opp == 'B' and elf == 'Y':
+        my_score = (2 + 3)
+    if  opp == 'B' and elf == 'Z':
+        my_score = (3 + 6)
     
-#     if opp == 'C' and elf == 'X':
-#         my_score = (1 + 6)
-#     if opp == 'C' and elf == 'Y':
-#         my_score = (2 + 0)
-#     if  opp == 'C' and elf == 'Z':
-#         my_score = (3 + 3)
+    if opp == 'C' and elf == 'X':
+        my_score = (1 + 6)
+    if opp == 'C' and elf == 'Y':
+        my_score = (2 + 0)
+    if  opp == 'C' and elf == 'Z':
+        my_score = (3 + 3)
     
-#     sum_score = sum_score + my_score
+    sum_score = sum_score + my_score
 
     
-# print(sum_score)
+print(sum_score)
 
 
 ###################  2nd part ##############
